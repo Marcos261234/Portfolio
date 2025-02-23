@@ -1,0 +1,535 @@
+/* ESTILO GERAL */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h2.titulo{
+
+    color: white;
+    font-size: 38px;
+    text-align: center;
+
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 5px
+
+}
+
+h2.titulo span{
+
+    color: rgb(0, 130, 216);
+
+}
+
+body{
+
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+/* ESTILO CABEÇALHO */
+
+header{
+
+    padding: 40px 4%;
+    
+
+}
+
+header > .interface{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+
+}
+
+header a{
+
+    color: rgba(255, 255, 255, 0.349);
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+
+}
+
+header a:hover, form .btn-enviar input:hover{
+    color: azure;
+    transform: scale(1.1);
+
+}
+
+header nav ul{
+
+    list-style-type: none;
+   
+
+}
+
+header nav ul li{
+
+    display: inline-block;
+    padding: 0 30px;
+
+}
+
+
+header .btn-contato button{
+
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    width: 140px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 130, 216);
+}
+
+header .btn-contato button:hover, form .btn-enviar input:hover{
+
+    box-shadow: 0px 0px 8px rgb(6, 128, 228);
+
+
+}
+
+section.Home{
+
+    background-image: url();
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.txt_home{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 25px;
+    width: 50%;
+    height: 100%;
+    gap: 10px;
+
+
+}
+
+.txt_home h1{
+
+    font-size: 70px;
+    color: white;
+
+}
+
+.txt_home p{
+
+    font-size: 25px;
+    color: rgb(0, 130, 216);
+
+}
+
+.img_home{
+
+    width: 59%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.opacity{
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn_home{
+
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.btn_home button{
+
+    size: 20px;
+    color: antiquewhite;
+    transition: 1.5s;
+    width: 145px;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(0, 130, 216);
+
+}
+
+.icons{
+
+    font-size: 30px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding-left: 10px;
+
+}
+
+.icons a{
+
+    display: block;
+    transition: .8s;
+
+}
+
+
+.icons i{
+
+    color: rgb(0, 130, 216);
+
+}
+
+.icons a:hover{
+
+    color: rgb(55, 90, 143);
+    transform: translateY(-8px);
+
+}
+
+.opacidade{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline
+}
+
+/* ESTILO HABILIDADES */
+
+section.habilidades{
+
+    padding: 40px 4%;
+
+}
+
+.habilidades .habil{
+    color: white;
+    padding: 80px 4%;
+
+}
+
+.interface_hab > h3{
+
+    color: white;
+    gap: 10px;
+    padding: 4%;
+    text-align: center;
+
+}
+
+.habilidades .habil img{
+    margin-left: 14px;
+    color: rgb(16, 140, 212);
+    display: flex;
+
+}
+
+.habilidades .habil h3{
+
+    font-size: 20px;
+    margin-left: 9px;
+
+}
+
+/* ESTILO SOBRE */
+
+section.sobre{
+
+    padding: 80px 4%;
+
+
+}
+
+section.sobre .flex{
+
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 180px;
+
+}
+
+
+.sobre .txt_sobre{
+
+
+    color: white;
+
+}
+
+.sobre .txt_sobre h2{
+
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+}
+
+.sobre .txt_sobre h2 span{
+
+    color: rgb(0, 130, 216);
+    display: block;
+
+}
+
+.sobre .txt_sobre p{
+
+    margin: 10px 0px;
+
+}
+
+.btn-social button{
+
+    align-items: center;
+    background-color: rgb(0, 130, 216);
+    font-size: 17px;
+    size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    box-shadow: rgb(0, 130, 216);
+
+}
+
+/* ESTILO PROJETOS */
+
+section.projetos{
+
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.192);
+
+}
+
+section.projetos .flex{
+
+    justify-content: space-around;
+
+
+}
+
+.img-port{
+
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 4s;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.img-port:hover{
+
+    background-position: 100% 100%;
+
+}
+
+.overlay{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+
+}
+
+.overlay:hover{
+
+    opacity: 1;
+
+}
+
+section.form{
+
+    padding: 80px 4%;
+
+}
+
+form{
+
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+
+}
+
+form input, form textarea{
+
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 20px 15px;
+    color: azure;
+    font-size: 15px;
+
+}
+
+form textarea{
+
+    resize: none;
+    max-height: 180px;
+
+}
+
+form .btn-enviar{
+
+    margin-top: 17px;
+    text-align: center;
+    
+
+}
+
+form .btn-enviar input{
+
+    width: 120px;
+    cursor: pointer;
+    background-color: rgb(0, 130, 216);
+    color: azure;
+    transition: 1.2s;
+    font-weight: 400
+    
+}
+
+/* ESTILO RODAPE */
+
+footer{
+
+    padding: 40px 4%;
+    box-shadow: 0px -1px 1px rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+ 
+    
+}
+
+.line-footer{
+
+    display: flex;
+    justify-content: space-between;
+    margin-right: 170px;
+
+}
+
+.line-footer p{
+
+    color: rgb(13, 196, 241);
+
+}
+
+.line-footer p a{
+
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 1020px){
+
+    /* cabecalho */
+
+    .Menu-Desktop, .btn-contato{
+
+        display: none;
+
+    }
+
+    .img_home{
+
+        display: none;
+
+    }
+
+    /* classes gerais */
+
+    .flex{
+
+        flex-direction: column;
+
+    }
+
+    .line-footer{
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 170px;
+    
+    }
+
+}
